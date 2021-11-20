@@ -1,0 +1,29 @@
+{
+  "name": "racefi-spl-token",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Steven <steven.lee@racefi.io>",
+  "homepage": "https://racefi.io/",
+  "scripts": {
+    "start": "npx ts-node -s src/token/index.ts "
+  },
+  "dependencies": {
+    "@babel/runtime":"^7.16.3",
+    "@solana/spl-token": "^0.1.8",
+    "@solana/web3.js": "^1.28.0",
+    "bip39": "^3.0.4",
+    "bs58": "^4.0.1",
+    "ed25519-hd-key": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/bs58": "^4.0.1",
+    "@types/node": "^16.11.6",
+    "dotenv":"10.0.0",
+    "typescript": "^4.1.3",
+    "watch": "^1.0.2",
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/node": "^7.10.5",
+    "ts-node":"^10.4.0"
+  }
+}
