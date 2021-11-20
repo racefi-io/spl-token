@@ -1,4 +1,4 @@
-import { Keypair, LAMPORTS_PER_SOL } from "@solana/web3.js";
+import { Keypair, LAMPORTS_PER_SOL, SystemProgram } from "@solana/web3.js";
 import { CONNECTION } from "../constant";
 
 import * as SPLToken from "@solana/spl-token";
@@ -31,7 +31,8 @@ async function main() {
         //     LAMPORTS_PER_SOL,
         // );
         // await CONNECTION.confirmTransaction(fromAirdropSignature);
-        let multisig = Keypair
+        // let multisig = Keypair
+
         let mint = await SPLToken.Token.createMint(
             CONNECTION,
             fromWallet,
@@ -57,7 +58,7 @@ async function main() {
         console.log(mint.publicKey.toBase58());
 
         /**
-         * Disable mint and set multisig
+         * Disable mint 
          */
         await mint.setAuthority(
             mint.publicKey,
