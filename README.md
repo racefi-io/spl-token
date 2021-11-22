@@ -1,13 +1,10 @@
+# RACEFI Token By Javascript API
 
-## Start
-
-install dependency
-
-```bash
-npm install
-```
+## Getting Started
 
 ```bash
-npx start
+$ npm install
 ```
-
+```bash
+$ npm start
+```
